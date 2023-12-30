@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mohd Zeeshan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mohd Zeeshan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Zeeshan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mohd Zeeshan</h1>
+        <p class="section__text__p2">Engineering Undergrad</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mohd-zeeshan-74b91020b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.E Bachelors Degree at Dr. D. Y. Patil Institute of Tecnology, Pimpri, Pune<br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              E&TC Engineer with expertise in software domains such as web development, Skilled 
+              in programming languages and experienced in core domain power devices and circuits. 
+              with a professional Electronics and Software Background with a Cumulative CGPA of 8.50.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java-script</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="details-container">
+        <h2 class="experience-sub-title">Coursework </h2>
+        <div class="article-container">
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>DBMS</h3>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Operating Systems</h3>
+            </div>
+          </article>
+          <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Data Structures and Algorithms</h3>
+            </div>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Object Oriented Programming</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">IOT Based Anti-Thefting System using MQTT protocol</h2>
+            <div class="description">
+           <b> <i>● Key Skills- IOT Protocols, Raspberry Pi, Electronics </i></b> <br>
+                ● Implementing a security system by utilizing the MQTT protocol to gain better QOS 3 standards and reduce latency. <br>
+                ● Employing Raspberry Pi as the server and ESP32 as the nodes for detecting intruders. <br>
+                ● The MQTT is a perfect choice for the protocol as it provides QOS 3 the latency is almost close to 0.</> <br>
+            </div>
+
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">NFC-Payment System.</h2>
+            <div class="btn-container">
+              ● Key Skills- HTML, CSS, Java-script, PHP, MySQL, Electronics
+● The NFC card payment System utilizing Near field communication cards
+● The ESP 32 is employed as the controller as it is wifi and bluetooth enabled.
+● Implemented contactless technology system, enabling seamless transactions and reducing customer wait times
+by 50%, resulting in a 20% increase in customer satisfaction scores.
+● Streamlined the website interface for both end users and merchants, resulting in a 50% reduction in user
+onboarding time and a 20% increase in overall customer satisfaction.
+● The project is categorized into two categories: Hardware side and Software side
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Solar Based Insect Killer for Agriculture</h2>
+            <div class="btn-container">
+              <p>● Key Skills- Electronics, Arduino
+                ● Demonstrated a sustainable solution to control insect population without using harmful chemicals.
+                ● Integrated solar panels and rechargeable batteries to save power.
+                ● Integration of UV LEDs plays the major role in the prototype.
+                ● Used the Arduino and relay for controlling and triggering purposes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:zeeshnmohd22@gmail.com">zeeshnmohd22@gmail.com
+          </a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mohd-zeeshan-74b91020b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>
+        </div>
+        <div>
+          <div class="container">
+            <h3>Contact Form</h3>
+            <form action="#" name="contact_form">
+              <label for="first_name">First Name</label>
+              <input name="first_name" type="text" required placeholder="Your name"/>
+              <br>
+              <label for="last_name">Last Name</label>
+              <input name="last_name" type="text" required placeholder="last name"/>
+              <br>
+              <label for="email">Email</label>
+              <input name="email" type="email" required placeholder="you@domain.com"/>
+              <br>
+              <label for="message">Message</label><br>
+              <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+              <div class="center">
+                <input type="submit" value="Submit">
+              </div>
+            </form>	
+          </div>
+        </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Zeeshan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+  
